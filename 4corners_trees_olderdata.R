@@ -2,7 +2,6 @@ library(tidyverse)
 library(ggplot2)
 
 
-
 Utah<-  read.csv("Older_4corners_Treedata/UTTreesCond.csv")
 Colorado<- read.csv("Older_4corners_Treedata/COTreesCond.csv")
 Arizona<- read.csv("Older_4corners_Treedata/AZTreesCond.csv")
