@@ -1,6 +1,6 @@
 ### 1. resampled plots. 2. remove treated plots. 3. filter species 
 
-library(tidyverse)
+library(tidyverse) 
 library(dplyr)
 
 utcond2000<-read.csv("UTcond2000.csv")
@@ -173,18 +173,6 @@ table(pipoplots2$SPCD)
 
 ## resampled, non treated, pipo&associated species plots:
 write.csv(pipoplots2, "nontrmt_resampled_pipoassoc.csv")
-
-
-
-### Get the plots identified in pipoplots into "notreatedcond"  ??????
-
-nontreatedcond<- read.csv("nontreatedCOND.csv")
-
-CONDpiponontreat<-nontreatedcond[!(nontreatedcond$SUCP %in% pipoplots2$SUCP),]
-
-# this only removed 4,000 plots+conditions?
-
-
 
 
 
