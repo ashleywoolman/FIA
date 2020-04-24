@@ -1,4 +1,4 @@
-### 1. resampled plots. 2. remove treated plots. 3. filter species
+### 1. resampled plots. 2. remove treated plots. 3. filter species 
 
 library(tidyverse)
 library(dplyr)
